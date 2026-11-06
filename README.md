@@ -2,7 +2,7 @@
 
 This repository contains the backend service for *Manager Library*, built using PHP with the **Laravel** framework, adhering strictly to the Spec-Driven Development (SDD) methodology.
 
-## ⚙️ Core SDD Architectural Decisions
+##  Core SDD Architectural Decisions
 
 Following the constraints mapped out from `spec-python/`, this backend project translates architectural patterns into Laravel entities:
 
@@ -21,7 +21,7 @@ Endpoints are designed explicitly under the `/api/v1/` prefix block to serve int
 - `GET /api/v1/books` -> Implements strict text filtering, category filtering, and mandatory item pagination parameters.
 - `POST /api/v1/loans` -> Manages multi-line borrowing events inside a safe transactional layer (blocking operations if loan selections break the required 1-to-3 books rule or if the targeted member profile carries overdue lines).
 
-## 🚀 Execution Sequences
+## Execution Sequences
 
 ### Schema Migrations Setup
 To verify and append the database structural restrictions onto the live environment instance, execute the native Artisan schema processing script:
